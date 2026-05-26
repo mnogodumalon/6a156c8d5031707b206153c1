@@ -126,6 +126,26 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
+      {/* Workflow Navigation */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="#/intents/reiseplanung" className="bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 min-w-0">
+          <IconWallet size={24} className="text-primary shrink-0" stroke={1.5} />
+          <div className="min-w-0 flex-1">
+            <p className="font-semibold text-sm text-foreground truncate">Reise planen</p>
+            <p className="text-xs text-muted-foreground line-clamp-2">Budgetposten für eine Reise anlegen und Budget verwalten</p>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" stroke={1.5} />
+        </a>
+        <a href="#/intents/ausgaben-erfassung" className="bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 min-w-0">
+          <IconReceipt size={24} className="text-primary shrink-0" stroke={1.5} />
+          <div className="min-w-0 flex-1">
+            <p className="font-semibold text-sm text-foreground truncate">Ausgaben erfassen</p>
+            <p className="text-xs text-muted-foreground line-clamp-2">Ausgaben für eine Reise schnell erfassen und auswerten</p>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" stroke={1.5} />
+        </a>
+      </div>
+
       {/* KPI Overview */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
