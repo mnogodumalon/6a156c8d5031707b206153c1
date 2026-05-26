@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "reise",
+      "app_id": "6a156c72cca2612665962e67",
+      "path": "/rest/apps/6a156c72cca2612665962e67/records",
+      "allowed_fields": [
+        "reiseziel",
+        "reisebeginn",
+        "reiseende",
+        "anzahl_reisende",
+        "gesamtbudget",
+        "waehrung",
+        "notizen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Reise — Formular"
+    },
+    {
+      "entity": "kategorie",
+      "app_id": "6a156c77458df5384d2f2876",
+      "path": "/rest/apps/6a156c77458df5384d2f2876/records",
+      "allowed_fields": [
+        "kategoriename",
+        "kategorie_beschreibung",
+        "kategorie_icon"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Kategorie — Formular"
+    },
+    {
+      "entity": "budgetposten",
+      "app_id": "6a156c78ee9b9e72eca1f82e",
+      "path": "/rest/apps/6a156c78ee9b9e72eca1f82e/records",
+      "allowed_fields": [
+        "geplanter_betrag",
+        "prioritaet",
+        "budgetposten_notiz"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Budgetposten — Formular"
+    },
+    {
+      "entity": "ausgabe",
+      "app_id": "6a156c7a28f199a3c226f897",
+      "path": "/rest/apps/6a156c7a28f199a3c226f897/records",
+      "allowed_fields": [
+        "ausgabe_betrag",
+        "ausgabe_datum",
+        "ausgabe_beschreibung",
+        "zahlungsmethode",
+        "ausgabe_notiz"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Ausgabe — Formular"
+    }
+  ]
+}

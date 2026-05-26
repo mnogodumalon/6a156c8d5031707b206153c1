@@ -1,0 +1,8 @@
+- Reise (reise): reiseziel[string/text], reisebeginn[date/date], reiseende[date/date], anzahl_reisende[number], gesamtbudget[number], waehrung[lookup/select], notizen[string/textarea]
+- Kategorie (kategorie): kategoriename[string/text], kategorie_beschreibung[string/textarea], kategorie_icon[lookup/select]
+- Budgetposten (budgetposten): reise[applookup/select], kategorie[applookup/select], geplanter_betrag[number], prioritaet[lookup/radio], budgetposten_notiz[string/textarea]
+  → reise links to app_id 6a156c72cca2612665962e67
+  → kategorie links to app_id 6a156c77458df5384d2f2876
+- Ausgabe (ausgabe): ausgabe_kategorie[applookup/select], ausgabe_betrag[number], ausgabe_datum[date/date], ausgabe_beschreibung[string/text], zahlungsmethode[lookup/select], beleg[file], ausgabe_notiz[string/textarea], ausgabe_reise[applookup/select]
+  → ausgabe_kategorie links to app_id 6a156c77458df5384d2f2876
+  → ausgabe_reise links to app_id 6a156c72cca2612665962e67
